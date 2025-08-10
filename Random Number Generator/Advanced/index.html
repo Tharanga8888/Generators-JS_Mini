@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced Random Number Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Random Number Generator</h1> 
+
+        <div class="settings">
+            <label>Min: <input type="number" id="min" value="1"></label>
+            <label>Max: <input type="number" id="max" value="6"></label>
+            <label>Count: <input type="number" id="count" value="3" min="1"></label>
+            <label>
+                <input type="checkbox" id="unique"> No repeats
+            </label>
+        </div>
+
+        <button id="rollBtn">Generate</button>
+
+        <div id="results"></div>
+
+        <h3>History</h3>
+        <ul id="history"></ul>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
